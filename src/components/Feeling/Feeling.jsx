@@ -19,7 +19,9 @@ function Feeling(){
             value={feeling} 
             type='number'/>
         </form>
-            <button onClick={() => history.push('/understanding')}>NEXT</button>
+        {
+            feeling !== '' ? <button onClick={() => history.push('/understanding')}>NEXT</button> : <div></div>
+        }
         </>
     )
 }

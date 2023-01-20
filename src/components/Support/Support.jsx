@@ -19,7 +19,9 @@ function Support(){
             value={support}
             type='number'/>
         </form>
-            <button onClick={() => history.push('/comments')}>NEXT</button>
+        {
+            support !== '' ? <button onClick={() => history.push('/comments')}>NEXT</button> : <div></div>
+        }
         </>
     )
 }

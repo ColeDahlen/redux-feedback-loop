@@ -19,7 +19,9 @@ function Understanding(){
             value={understanding} 
             type='number'/>
         </form>
-            <button onClick={() => history.push('/support')}>NEXT</button>
+        {
+            understanding !== '' ? <button onClick={() => history.push('/support')}>NEXT</button> : <div></div>
+        }
         </>
     )
 }
