@@ -5,6 +5,7 @@ function Last(){
     const history = useHistory();
     return(
         <>
+            <h1>SUCCESS!</h1>
             <button onClick={() => history.push('/')}>Leave New Feedback</button>
         </>
     )
