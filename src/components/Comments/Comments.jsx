@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+// Fourth Page
 function Comments(){
     const [comment, setComment] = useState('')
     const history = useHistory();
     const dispatch = useDispatch();
+    // Update global variable with user input.
     const howAreYouCommenting = () =>{
         dispatch({
             type: 'SUBMIT_COMMENT',

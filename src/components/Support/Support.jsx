@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+// Third Page
 function Support(){
     const [support, setSupport] = useState('')
     const history = useHistory();
     const dispatch = useDispatch();
+    // Update global variable with user input.
     const howAreYouSupported = () =>{
         dispatch({
             type: 'SUBMIT_SUPPORTED',

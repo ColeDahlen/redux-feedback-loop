@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+// Second Page
 function Understanding(){
     const [understanding, setUnderstanding] = useState('');
     const history = useHistory();
     const dispatch = useDispatch();
+    // Update global variable with user input.
     const howAreYouUnderstanding = () =>{
         dispatch({
             type: 'SUBMIT_UNDERSTANDING',

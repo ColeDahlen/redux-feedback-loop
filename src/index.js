@@ -12,12 +12,20 @@ const feeling = (state=0, action) =>{
         let feelingInput = Number(action.payload)
         return feelingInput;
     }
+    if(action.type === 'RESET'){
+        let reset = 0;
+        return reset;
+    }
     return state;
 }
 const understanding = (state=0, action) =>{
     if(action.type === 'SUBMIT_UNDERSTANDING'){
         let understandingInput = Number(action.payload)
         return understandingInput;
+    }
+    if(action.type === 'RESET'){
+        let reset = 0;
+        return reset;
     }
     return state;
 }
@@ -26,12 +34,20 @@ const support = (state=0, action) =>{
         let supportedInput = Number(action.payload)
         return supportedInput;
     }
+    if(action.type === 'RESET'){
+        let reset = 0;
+        return reset;
+    }
     return state;
 }
 const comments = (state='', action) =>{
     if(action.type === 'SUBMIT_COMMENT'){
         let commentInput = action.payload;
         return commentInput;
+    }
+    if(action.type === 'RESET'){
+        let reset = '';
+        return reset;
     }
     return state;
 }
